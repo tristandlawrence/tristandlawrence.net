@@ -19,9 +19,44 @@ body{
 }
 .wrap{max-width:880px;margin:0 auto;padding:0 24px;}
 
+/* Site navigation */
+.sitenav{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:16px 28px;
+  flex-wrap:wrap;
+  padding:24px 0 0;
+}
+.sitenav .brand{
+  font-family:var(--mono);
+  font-size:14px;
+  color:var(--text);
+  text-decoration:none;
+}
+.sitenav .brand:hover{color:var(--accent);}
+.sitenav ul{
+  display:flex;
+  gap:22px;
+  list-style:none;
+  margin:0;
+  padding:0;
+  flex-wrap:wrap;
+}
+.sitenav ul a{
+  font-family:var(--mono);
+  font-size:13px;
+  color:var(--text-dim);
+  text-decoration:none;
+  padding-bottom:3px;
+  border-bottom:1px solid transparent;
+}
+.sitenav ul a:hover{color:var(--accent);}
+.sitenav ul a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent-dim);}
+
 /* Header / hero */
 header.site{
-  padding:64px 0 40px;
+  padding:48px 0 40px;
   border-bottom:1px solid var(--border);
 }
 .eyebrow{
@@ -222,24 +257,6 @@ section p.note a{border-bottom-color:var(--accent-dim);}
 }
 .table-scroll{overflow-x:auto;}
 
-/* Problem statements */
-.problems{
-  list-style:none;
-  padding:0;
-  margin:0;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:16px;
-}
-.problems li{
-  background:var(--bg-alt);
-  border-left:2px solid var(--accent-dim);
-  border-radius:0 6px 6px 0;
-  padding:16px 18px;
-  color:var(--text-dim);
-  font-size:15px;
-}
-
 /* Decision flow */
 .flow-start{
   display:inline-block;
@@ -292,7 +309,26 @@ section p.note a{border-bottom-color:var(--accent-dim);}
   margin:0;
   font-family:var(--mono);
   font-size:13.5px;
+  color:var(--text-dim);
 }
+
+/* Nested branches */
+.flow-branch > .flow-branches{
+  margin:12px 0 0 8px;
+  padding:0;
+}
+.flow-branch > .flow-branches > .flow-branch{
+  padding-left:24px;
+  margin-bottom:16px;
+}
+.flow-branch > .flow-branches > .flow-branch:last-child{margin-bottom:2px;}
+.flow-q{
+  margin:0 0 6px;
+  color:var(--text-dim);
+  font-size:14.5px;
+  font-style:italic;
+}
+.flow-branch .flow-branch .flow-problem{font-size:14.5px;color:var(--text-dim);}
 .flow-answer a{
   color:var(--accent);
   text-decoration:none;
@@ -316,6 +352,12 @@ section p.note a{border-bottom-color:var(--accent-dim);}
   font-size:18px;
   color:var(--text);
 }
+.offer h3 a{
+  color:var(--accent);
+  text-decoration:none;
+  border-bottom:1px solid var(--accent-dim);
+}
+.offer h3 a:hover{border-color:var(--accent);}
 .offer p{margin:0;font-size:15px;color:var(--text-dim);}
 
 .note{

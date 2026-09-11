@@ -8,51 +8,74 @@
 </head>
 <body>
 <div class="wrap">
-  <nav class="crumb"><a href="index.html">← Tristan Lawrence</a></nav>
-  <header class="site" style="padding-top:32px;">
+  <nav class="sitenav">
+    <a class="brand" href="index.html">Tristan Lawrence</a>
+    <ul>
+      <li><a href="index.html">About</a></li>
+      <li><a href="cybersecurity-services.html" aria-current="page">Cybersecurity</a></li>
+      <li><a href="organisational-design.html">Org Design</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="theatre.html">Theatre</a></li>
+    </ul>
+  </nav>
+  <header class="site">
     <p class="eyebrow">Services</p>
     <h1>Cybersecurity Advisory &amp; vCISO</h1>
-    <p class="tagline">Fractional security leadership and focused, engagement-based advisory for organisations that need experienced judgement without a full-time hire.</p>
+    <p class="tagline">Ongoing and once-off cybersecurity services.</p>
   </header>
 
   <section>
-    <h2>Problems I help solve</h2>
-    <p>Most organisations don't call me because they've had a breach. They call because something isn't adding up — the reporting says one thing and the room knows another, or security has become a bottleneck nobody wants to own.</p>
-    <ul class="problems">
-      <li>“The board keeps asking whether we're secure, and nobody can answer honestly.”</li>
-      <li>“Everything is green in the report and we all quietly know it isn't.”</li>
-      <li>“We've grown past the point where security can be someone's side-of-desk job.”</li>
-      <li>“We only find out about risk once it's already a problem.”</li>
-      <li>“If we had a serious incident tomorrow, we'd be making it up on the day.”</li>
-      <li>“We're losing deals because we can't credibly answer customer security questions.”</li>
-      <li>“Our security leader just left and we don't know what we've inherited.”</li>
-    </ul>
-  </section>
-
-  <section>
     <h2>Where to start</h2>
+    <p>Most organisations don't call me because they've had a breach. They call because something isn't adding up — the reporting says one thing and the room knows another, or security has become a bottleneck nobody wants to own. Find the line below that sounds most like you.</p>
     <div class="flow-start">Where are you stuck?</div>
     <ul class="flow-branches">
+
       <li class="flow-branch">
-        <p class="flow-problem">“We have no security leadership — or it just walked out the door.”</p>
-        <p class="flow-answer">→ <a href="#vciso">Virtual CISO</a> &nbsp;or&nbsp; <a href="#interim">Interim Security Leadership</a></p>
+        <p class="flow-problem">We don't know what we need to do in cyber security.</p>
+        <p class="flow-answer">→ Start with a <a href="#maturity">Cybersecurity Risk &amp; Maturity Assessment</a>, which often leads into a <a href="#vciso">vCISO</a> engagement.</p>
       </li>
+
       <li class="flow-branch">
-        <p class="flow-problem">“We don't actually know how exposed we are.”</p>
-        <p class="flow-answer">→ <a href="#maturity">Security &amp; Risk Maturity Assessment</a></p>
+        <p class="flow-problem">We need someone to translate between the board or executive and our technical staff.</p>
+        <ul class="flow-branches">
+          <li class="flow-branch">
+            <p class="flow-q">Is there a risk or issue you already believe needs addressing?</p>
+            <p class="flow-answer">No → Start with a <a href="#vciso">Virtual CISO</a> engagement.</p>
+            <p class="flow-answer" style="margin-top:6px;">Yes → Start with a <a href="#maturity">Cybersecurity Risk &amp; Maturity Assessment</a>.</p>
+          </li>
+        </ul>
       </li>
+
       <li class="flow-branch">
-        <p class="flow-problem">“We'd be improvising on the day of an incident.”</p>
-        <p class="flow-answer">→ <a href="#ir">Incident Response Readiness</a></p>
+        <p class="flow-problem">We don't know what our risk tolerance is.</p>
+        <ul class="flow-branches">
+          <li class="flow-branch">
+            <p class="flow-answer">→ A full <a href="#maturity">Security Risk &amp; Maturity Assessment</a>.</p>
+          </li>
+          <li class="flow-branch">
+            <p class="flow-answer">→ An <a href="#ir">Incident Response Game</a> run as a readiness test, with the stakeholders who actually make the decisions.</p>
+          </li>
+          <li class="flow-branch">
+            <p class="flow-answer">→ <a href="#board">Board &amp; Executive Risk Communication</a> on your borderline risks, to make sure there's genuine alignment on them.</p>
+          </li>
+        </ul>
       </li>
+
       <li class="flow-branch">
-        <p class="flow-problem">“The board nods along, then nothing changes.”</p>
-        <p class="flow-answer">→ <a href="#board">Board &amp; Executive Risk Communication</a></p>
+        <p class="flow-problem">We know what we need, and we won't be surprised.</p>
+        <ul class="flow-branches">
+          <li class="flow-branch">
+            <p class="flow-problem">We need help setting up or practising for incidents.</p>
+            <p class="flow-answer">→ <a href="#ir">Cybersecurity Incident Response Games</a></p>
+          </li>
+          <li class="flow-branch">
+            <p class="flow-problem">We need help getting our technical teams to collaborate.</p>
+            <p class="flow-answer">→ <a href="#threatmodel">Cybersecurity Threat Model Workshops</a></p>
+          </li>
+        </ul>
       </li>
-      <li class="flow-branch">
-        <p class="flow-problem">“We're buying, selling, or trusting someone else with our data.”</p>
-        <p class="flow-answer">→ <a href="#diligence">Third-Party &amp; M&amp;A Security Due Diligence</a></p>
-      </li>
+
     </ul>
     <p class="note">Not sure which line you're on? That's a normal place to start — the first conversation is usually about working out which problem you actually have.</p>
   </section>
@@ -60,30 +83,57 @@
   <section>
     <h2>Services</h2>
     <div class="offer-list">
+
       <div class="offer" id="vciso">
         <h3>Virtual CISO (vCISO)</h3>
-        <p>Ongoing fractional security leadership: strategy, board and executive reporting, and risk oversight — a steady hand for a function that doesn't need, or can't yet justify, a full-time CISO.</p>
+        <p>Ongoing fractional security leadership, scaled to what you need: <strong>functional oversight</strong> — a second set of experienced eyes across strategy, risk and reporting; <strong>function leadership</strong> — running the security function outright while you grow or recruit; or <strong>staff coaching</strong> — developing the people you already have so they can do the job themselves.</p>
+        <p style="margin-top:10px;">Board and executive reporting, and risk oversight, come with all three.</p>
       </div>
+
       <div class="offer" id="maturity">
-        <h3>Security &amp; Risk Maturity Assessment</h3>
-        <p>An honest, evidence-based assessment of where your security and risk function actually stands against the framework that matters to you (ISO 27001, NIST CSF, Essential Eight, CPS 234), with a roadmap that's realistic about resourcing.</p>
+        <h3>Cybersecurity Risk &amp; Maturity Assessment</h3>
+        <p>An honest, evidence-based assessment of where you actually stand — covering reputational risk, compliance risk, and the impact security risk is having on your delivery and your strategy.</p>
+        <p style="margin-top:10px;">It can be scoped the way that's useful to you: to a customer, a system, a data set or a cohort, or run against a framework of your choice (ISO 27001, NIST CSF, Essential Eight, CPS 234). The assessment deliberately covers visibility and capability as well as controls — what you can't currently see, and what you couldn't act on even if you could.</p>
       </div>
+
       <div class="offer" id="ir">
-        <h3>Incident Response Readiness</h3>
-        <p>Reviewing or building your incident response plan, running tabletop exercises, and facilitating post-incident reviews that produce real fixes, not just a report.</p>
+        <h3>Cybersecurity Incident Response Games</h3>
+        <p>Setting up incident response, or practising it. Game-based exercises that put your real decision-makers inside a realistic incident and make them make the calls, followed by a walkthrough of what the decisions revealed.</p>
+        <p style="margin-top:10px;">Run with the right stakeholders in the room, this is also the fastest way to find out what your risk tolerance genuinely is, rather than what your policy says it is.</p>
       </div>
+
+      <div class="offer" id="threatmodel">
+        <h3>Cybersecurity Threat Model Workshops</h3>
+        <p>Game-based threat modelling that gets engineering and security teams solving the same problem together. Engineers walk through their architecture, the room roleplays threat actors, and the group leaves with prioritised risks and actual decisions — not a report that sits unread.</p>
+        <p style="margin-top:10px;">Based on the <a href="https://github.com/tristandlawrence/threat-modelling">open-source workshop</a> I developed and have been running for years.</p>
+      </div>
+
       <div class="offer" id="board">
         <h3>Board &amp; Executive Risk Communication</h3>
-        <p>Translating cyber risk into terms your board and executive team can actually use to make decisions — board papers, briefings, and metrics that tell the truth.</p>
+        <p>Translating cyber risk into terms your board and executive team can actually use to make decisions — board papers, briefings, and metrics that tell the truth. Particularly useful for borderline risks, where what you need is genuine alignment on whether to accept or act, not a number everyone quietly disagrees with.</p>
       </div>
+
+      <div class="offer" id="strategy">
+        <h3>Security Roadmap &amp; Strategy Development</h3>
+        <p>Turning an assessment into a sequenced, fundable plan: what to do, in what order, with which people and what money — and what you're deliberately choosing not to do yet, stated out loud so nobody is surprised later.</p>
+      </div>
+
+      <div class="offer" id="orgdesign">
+        <h3>Cybersecurity Organisational Design</h3>
+        <p>Designing the security function itself — governance design, skills assessment, and operating model design. Structure, decision rights and ways of working, so the function can carry what you're asking of it. More on the <a href="organisational-design.html">organisational design and risk culture page</a>.</p>
+      </div>
+
       <div class="offer" id="diligence">
         <h3>Third-Party &amp; M&amp;A Security Due Diligence</h3>
         <p>Vendor risk reviews, and security due diligence for acquisitions — on either side of the table.</p>
+        <p style="margin-top:10px;">This goes beyond a questionnaire. A questionnaire tells you what a third party says about itself; the assessment covers the visibility risks you're taking on — what you will and won't be able to see once you depend on them.</p>
       </div>
+
       <div class="offer" id="interim">
         <h3>Interim Security Leadership</h3>
         <p>Covering a security or technology leadership gap during a search, restructure, or transition.</p>
       </div>
+
     </div>
     <p class="note">This list is a starting point rather than a fixed menu — every engagement starts with a conversation about what you actually need.</p>
     <a class="cta" href="mailto:tristan_lawrence@hotmail.com">Get in touch</a>
