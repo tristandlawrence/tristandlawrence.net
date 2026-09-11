@@ -93,8 +93,9 @@ h2{
   margin:0 0 24px;
 }
 p{color:var(--text);max-width:66ch;}
-.interests a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-dim);}
-.interests a:hover{border-color:var(--accent);}
+.interests a,section p a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-dim);}
+.interests a:hover,section p a:hover{border-color:var(--accent);}
+section p.note a{border-bottom-color:var(--accent-dim);}
 
 /* Services grid */
 .services{
@@ -155,7 +156,10 @@ p{color:var(--text);max-width:66ch;}
 
 /* Photo pages (theatre / megagames) */
 .photo-page img{
-  width:100%;
+  display:block;
+  max-width:100%;
+  max-height:520px;
+  width:auto;
   border-radius:8px;
   border:1px solid var(--border);
   margin:8px 0 6px;
@@ -173,6 +177,128 @@ p{color:var(--text);max-width:66ch;}
 .gallery figure{margin:0;}
 .gallery img{width:100%;border-radius:8px;border:1px solid var(--border);}
 .gallery figcaption{color:var(--text-dim);font-size:13px;margin-top:8px;}
+
+/* Credit / role tables */
+.credits{
+  width:100%;
+  border-collapse:collapse;
+  margin:8px 0 8px;
+  font-size:15px;
+}
+.credits th{
+  text-align:left;
+  font-family:var(--mono);
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--text-dim);
+  font-weight:400;
+  padding:0 16px 10px 0;
+  border-bottom:1px solid var(--border);
+}
+.credits td{
+  padding:14px 16px 14px 0;
+  border-bottom:1px solid var(--border);
+  vertical-align:top;
+  color:var(--text);
+}
+.credits td:last-child,.credits th:last-child{padding-right:0;}
+.credits tr:last-child td{border-bottom:none;}
+.credits .year{
+  font-family:var(--mono);
+  font-size:13px;
+  color:var(--text-dim);
+  white-space:nowrap;
+}
+.credits .role{color:var(--text-dim);}
+.credits .show{font-weight:600;}
+.credits a{color:var(--accent);text-decoration:none;}
+.credits a:hover{text-decoration:underline;}
+.credits .note-inline{
+  display:block;
+  font-size:13px;
+  color:var(--accent);
+  margin-top:4px;
+}
+.table-scroll{overflow-x:auto;}
+
+/* Problem statements */
+.problems{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:16px;
+}
+.problems li{
+  background:var(--bg-alt);
+  border-left:2px solid var(--accent-dim);
+  border-radius:0 6px 6px 0;
+  padding:16px 18px;
+  color:var(--text-dim);
+  font-size:15px;
+}
+
+/* Decision flow */
+.flow-start{
+  display:inline-block;
+  position:relative;
+  border:1px solid var(--accent-dim);
+  background:var(--bg-alt);
+  border-radius:6px;
+  padding:14px 22px;
+  margin-bottom:16px;
+  font-family:var(--mono);
+  font-size:14px;
+  color:var(--accent);
+}
+.flow-start::after{
+  content:"";
+  position:absolute;
+  left:22px;
+  top:100%;
+  width:2px;
+  height:16px;
+  background:var(--border);
+}
+.flow-branches{
+  margin:0 0 0 22px;
+  padding:0;
+  border-left:2px solid var(--border);
+  list-style:none;
+}
+.flow-branch{
+  position:relative;
+  padding:0 0 4px 30px;
+  margin:0 0 22px;
+}
+.flow-branch:last-child{margin-bottom:0;}
+.flow-branch::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:13px;
+  width:20px;
+  height:2px;
+  background:var(--border);
+}
+.flow-problem{
+  margin:0 0 6px;
+  color:var(--text);
+  font-size:15.5px;
+}
+.flow-answer{
+  margin:0;
+  font-family:var(--mono);
+  font-size:13.5px;
+}
+.flow-answer a{
+  color:var(--accent);
+  text-decoration:none;
+  border-bottom:1px solid var(--accent-dim);
+}
+.flow-answer a:hover{border-color:var(--accent);}
 
 /* Service detail pages */
 .offer-list{
